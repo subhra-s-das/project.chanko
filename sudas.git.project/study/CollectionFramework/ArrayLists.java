@@ -28,7 +28,6 @@ public class ArrayLists {
 
 		Collections.sort(studentList, new Comparator<Students>() {
 
-			@Override
 			public int compare(Students o1, Students o2) {
 				return o1.getName().compareToIgnoreCase(o2.getName());
 			}
