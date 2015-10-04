@@ -1,11 +1,11 @@
 package StringHelper;
 
-public class PlayWithString {
+public class StrinhHelper01 {
 
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 
-		new PlayWithString().workWithString();
+		new StrinhHelper01().workWithString();
 	}
 
 	
