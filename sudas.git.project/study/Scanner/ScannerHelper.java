@@ -1,8 +1,12 @@
 package Scanner;
 
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
-import org.apache.commons.lang3.SystemUtils;
 
 public class ScannerHelper {
 
@@ -17,12 +21,15 @@ class FindLineNumbers
 {
 	public void find()
 	{
-		Scanner scan1 = new Scanner(source); // input stream source
-		Scanner scan2 = new Scanner(source)	// file source
-	
-				Sacnner scan3 = new sca
-				
-				System.
+	BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));	
+	try {
+		String line = reader.readLine();
+		
+		System.out.println(line);
+	} catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
 	}
 	
 }

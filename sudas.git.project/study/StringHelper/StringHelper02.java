@@ -17,7 +17,7 @@ public class StringHelper02 {
 
 		logScanner logscan = new logScanner();
 		logscan.scanIgnoreCase();
-		new ReadLine().lineNum();
+//		new ReadLine().lineNum();
 
 	}
 
@@ -28,7 +28,7 @@ class useOfStringBuilder {
 		// fileinputstream to string
 		StringBuilder sb = new StringBuilder();
 		try {
-			FileInputStream fis = new FileInputStream(new File("/Users/S_Das/Documents/Java/sudas.log"));
+			FileInputStream fis = new FileInputStream(new File("C:/Test/smartreporting.log"));
 			int input;
 			while ((input = fis.read()) != -1) {
 				sb.append((char) input);
@@ -49,14 +49,15 @@ class logScanner {
 		StringBuilder sb = new StringBuilder();
 		FileInputStream fis;
 		try {
-			fis = new FileInputStream(new File("/Users/S_Das/Documents/Java/sudas.log"));
+			fis = new FileInputStream(new File("C:/Test/line.txt"));
 
 			int input;
 			while ((input = fis.read()) != -1) {
 				sb.append((char) input);
+
 			}
 
-			String findword[] = { "apache", "log" };
+			String findword[] = { "Apple", "banana" };
 
 			for (int i = 0; i < findword.length; i++) {
 				// System.out.println(findword[i]);
@@ -75,29 +76,25 @@ class logScanner {
 	}
 }
 
-class ReadLine
-{
-	public void lineNum()
-	{
-	try {
-		LineNumberReader ln = new LineNumberReader(new FileReader(new File("/Users/S_Das/Documents/Java/sudas.log")));
+class ReadLine {
+	public void lineNum() {
 		try {
-			String s;
-			while ((s=ln.readLine())!=null);
-			System.out.println(ln.getLineNumber());
-			
-		} catch (IOException e) {
+			LineNumberReader ln = new LineNumberReader(
+					new FileReader(new File("C:/Test/smartreporting.log")));
+			try {
+				String s;
+				while ((s = ln.readLine()) != null)
+					;
+				System.out.println(ln.getLineNumber());
+
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-	scanner
-	
-	
-	
-	
-	} catch (FileNotFoundException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
 	}
 }

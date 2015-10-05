@@ -2,9 +2,14 @@ package Scanner;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class ScannerTakeInput {
 
@@ -41,7 +46,31 @@ public class ScannerTakeInput {
 		}
 
 		// character class
+		/***
+		 * To read a file using character class use 1. BufferedReader 2.
+		 * FileReader
+		 * 
+		 */
 
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(""));
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		/***
+		 * To write a file using character class use 1. BufferedWriter 2.
+		 * FileWriter
+		 * 
+		 */
+
+		try {
+			BufferedWriter writer = new BufferedWriter(new FileWriter(""));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }
