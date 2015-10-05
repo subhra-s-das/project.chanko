@@ -90,6 +90,7 @@ class ReadLine
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	scanner
 	
 	
 	
