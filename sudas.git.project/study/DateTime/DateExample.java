@@ -1,4 +1,4 @@
-package sudas.study.example.one;
+package DateTime;
 
 import java.text.DateFormat;
 import java.text.ParseException;
