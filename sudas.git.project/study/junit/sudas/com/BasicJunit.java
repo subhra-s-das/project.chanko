@@ -1,4 +1,4 @@
-package sudas.junit;
+package junit.sudas.com;
 
 
 public class BasicJunit {

@@ -14,7 +14,7 @@ public class Inheritance02 {
 		
 		
 
-		SmartPhone Sphone = new SmartPhone();
+		Sphones Sphone = new Sphones();
 		Sphone.brand="BB";
 		System.out.println(Sphone);
 		Sphone.makecall(888888);
@@ -51,7 +51,7 @@ class MobilePhone {
 
 }
 
-class SmartPhone extends MobilePhone {
+class Sphones extends MobilePhone {
 	String model;
 	String brand;
 
@@ -69,7 +69,7 @@ class SmartPhone extends MobilePhone {
 	}
 }
 
-class OrdinaryPhone extends SmartPhone {
+class OrdinaryPhone extends Sphones {
 	String displayType;
 
 	public void makecall(long number) {
