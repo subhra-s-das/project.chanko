@@ -69,3 +69,37 @@ class Son extends Father {
 	}
 
 }
+
+abstract class Smartphone {
+	String model;
+	String IMEA;
+
+	// default constructor
+
+//	public Smartphone() {
+//
+//	}
+
+	// a parameterized constructor
+	public Smartphone(String model, String IMEA) {
+		this.model = model;
+		this.IMEA = IMEA;
+	}
+	
+	public abstract String displayInfo();
+}
+
+class iPhone extends Smartphone {
+
+	public iPhone(String model, String IMEA) {
+		super(model, IMEA);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public String displayInfo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

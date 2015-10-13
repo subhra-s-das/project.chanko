@@ -88,6 +88,9 @@ public class AbstructClass {
 		 */
 
 		MynewInterface my1 = new NewimplementInterface();
+		
+		
+		
 
 	}
 
@@ -264,8 +267,9 @@ interface MyInterface {
 	 */
 
 	// default method
-	default void InterfaceDefaultMethod() {
+	default String InterfaceDefaultMethod() {
 		System.out.println("I am a default method in MyInterface ");
+		return null;
 	}
 
 	// abstract method

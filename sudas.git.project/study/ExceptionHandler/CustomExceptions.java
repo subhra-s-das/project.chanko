@@ -10,7 +10,7 @@ public class CustomExceptions {
 		try {
 			exception.displayName(name);
 			defaultException.testException(55);
-		} catch (CusException | NumberFormatException e) {
+		} catch (CExcep | NumberFormatException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
@@ -22,7 +22,8 @@ public class CustomExceptions {
 // this is the custom exception class
 class CusException extends Exception {
 
-	// basically I am calling the superclass Exception constructor which takes one parameter "message"
+	// basically I am calling the superclass Exception constructor which takes
+	// one parameter "message"
 	public CusException(String message) {
 		super(message);
 	}
@@ -34,10 +35,10 @@ class CusException extends Exception {
 class TestCustomException {
 	String name;
 
-	public void displayName(String name) throws CusException {
+	public void displayName(String name) throws CExcep {
 		this.name = name;
 		if (this.name == null) {
-			throw new CusException("This is a custom exception for name = null");
+			throw new CExcep("This is a custom exception for name = null");
 		}
 
 		else {

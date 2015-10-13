@@ -46,6 +46,7 @@ public class ScannerHelper {
 
 				System.out.println("from scanner " + scannerLine);
 				bos.write(scannerLine.getBytes());
+				bos.write(' ');
 				bos.write('\n');
 
 			} catch (IOException e) {
