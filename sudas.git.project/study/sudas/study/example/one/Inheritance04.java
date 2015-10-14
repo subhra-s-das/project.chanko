@@ -4,7 +4,7 @@ public class Inheritance04 {
 	public static void main (String args[])
 	{
 
-		typeCasting casting = new typeCasting();
+		Tcasting casting = new Tcasting();
 		casting.typecast(10);
 	
 	

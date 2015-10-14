@@ -12,7 +12,7 @@ public class Inheritance04 {
 
 }
 
-class typeCasting 
+class Tcasting 
 {
 	public int number;
 	
