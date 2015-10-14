@@ -3,25 +3,40 @@ package Sandbox;
 public class sandbox {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub  test
-new sandbox().testboolean();
+
+		TestInterface intef = new TestClass();
+		intef.address();
+
 	}
 
-	public void testboolean()
-	{
-		boolean condition = true;
-		int check = 0;
-		while(condition)
-		{
-			System.out.println("condition true"+'\t'+check ++);
-					
-		if(check==10)
-		{
-			return;
-		}
-		}
-		
-		
+}
+
+interface TestInterface {
+	public void name();
+
+	public void address();
+
+	public void dob();
+}
+
+class TestClass implements TestInterface {
+
+	@Override
+	public void name() {
+		// TODO Auto-generated method stub
+
 	}
-	
+
+	@Override
+	public void address() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void dob() {
+		// TODO Auto-generated method stub
+
+	}
+
 }
