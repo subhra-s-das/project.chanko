@@ -1,4 +1,4 @@
-package DateTime;
+package sudas.utils;
 
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -6,7 +6,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.TimeZone;
 
-public class DateExample {
+public class EPOCHandDateTime {
 
 	public static void main(String[] args) {
 		ChangeDate dateuse = new ChangeDate();

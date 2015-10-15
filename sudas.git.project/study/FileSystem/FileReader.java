@@ -32,11 +32,7 @@ public class FileReader {
 
 }
 
-/*
- * character byte Reader Input Stream File Reader File input stream File Writer
- * File output stream Buffer Reader Buffer input stream Buffer Writer Buffer
- * output stream
- */
+
 // Example for Buffer Reader class from character class
 class bufferreader {
 

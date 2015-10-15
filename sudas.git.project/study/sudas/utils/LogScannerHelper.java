@@ -1,5 +1,11 @@
 package sudas.utils;
 
+/***
+ * @author sudas
+ * This utility can search for a string in a log file
+ * along with print the line number where the string is present
+ */
+
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -22,7 +28,8 @@ class scanner {
 	// read the content of the log file and search for a perticular string
 	public void scanLines() {
 		try {
-			Scanner scan = new Scanner(new File("C:\\Java_Source_Code\\New folder\\New folder\\sudas.git.project\\study\\sudas\\utils\\sample.txt"));
+			Scanner scan = new Scanner(new File(
+					"C:\\Java_Source_Code\\New folder\\New folder\\sudas.git.project\\study\\sudas\\utils\\sample.txt"));
 
 			String match = "of";
 			int lineNumber = 1;
@@ -39,7 +46,7 @@ class scanner {
 					int lineNum = lineNumber++;
 					if (completeString != null) {
 
-						System.out.println(completeString + '\t' + "-- at line number "+lineNum);
+						System.out.println(completeString + '\t' + "-- at line number " + lineNum);
 					}
 				}
 
