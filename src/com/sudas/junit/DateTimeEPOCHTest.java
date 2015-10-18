@@ -4,6 +4,7 @@ import static org.junit.Assert.*;
 
 import java.util.Date;
 
+import org.hamcrest.Matchers;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -11,6 +12,7 @@ import org.junit.BeforeClass;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ErrorCollector;
+import org.mockito.internal.matchers.Equals;
 
 public class DateTimeEPOCHTest {
 
@@ -47,7 +49,6 @@ public class DateTimeEPOCHTest {
 		// fail("Not yet implemented");
 	}
 
-	
 	// EPOCH to Date Time conversion IST
 	@Test
 	public void Test01() {
@@ -57,33 +58,31 @@ public class DateTimeEPOCHTest {
 
 			datetime1.setDateTime(dateArray[i]);
 			long epoch = datetime1.getEpoch();
-			if(i<actualEPOCH.length)
-			{
-			long actual = actualEPOCH[i];
-			assertEquals(epoch, actual);
+			if (i < actualEPOCH.length) {
+				long actual = actualEPOCH[i];
+				assertEquals(epoch, actual);
 			}
 		}
 
 	}
-	
-	
+
 	@Rule
-	ErrorCollector collector = new ErrorCollector();
-	
+	public ErrorCollector collector = new ErrorCollector();
+
 	// EPOCH to Date Time conversion IST
 	@Test
 	public void Test02() {
 		String dateArray[] = { "10/15/2015 00:00:00", "10/15/2015 00:00:01", "10/15/2015 00:00:02" };
-		long actualEPOCH[] = { 1444847400, 1444847403, 1444847402 };
+		long actualEPOCH[] = { 1444847404, 1444847401, 1444847402 };
 		for (int i = 0; i < dateArray.length; i++) {
 
 			datetime1.setDateTime(dateArray[i]);
 			long epoch = datetime1.getEpoch();
-			if(i<actualEPOCH.length)
-			{
-			long actual = actualEPOCH[i];
-//			assertEquals(epoch, actual);
-			collector.checkTha
+			if (i < actualEPOCH.length) {
+				long actual = actualEPOCH[i];
+				new Matchers();
+				// assertEquals(epoch, actual);
+				collector.checkThat(epoch, Matchers.equalTo(actual));
 			}
 		}
 
