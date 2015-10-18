@@ -36,6 +36,7 @@ class UseReflections {
 
 }
 
+// using this instead of class name
 class useMoreReflections {
 	String firstName;
 	int age;
@@ -60,5 +61,7 @@ class useMoreReflections {
 	}
 
 }
+
+
 
 
