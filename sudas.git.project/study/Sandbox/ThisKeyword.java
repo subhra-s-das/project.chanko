@@ -1,15 +1,16 @@
 package Sandbox;
 
-public class InstanceOfClass {
+public class ThisKeyword {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Apple apple = new Apple("Green Apple");
-		System.out.println("apple hash : " + apple);
+		Apple newApple = new Apple("Green Apple");
+		System.out.println("newApple hash : " + newApple);
 
-		apple.calculateQuantity();
-		apple.testThis();
+		newApple.calculateQuantity();
+		newApple.testThis();
+		System.out.println("newApple "+newApple);
 	}
 
 }
