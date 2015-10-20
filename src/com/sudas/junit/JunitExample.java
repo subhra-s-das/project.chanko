@@ -78,8 +78,15 @@ Assert.assertArrayEquals("All elements in array are equal", num1, num2);
 //Assert.assertArrayEquals("All elements in array are equal", num1, num2);
 //		Assert.assertThat(num1, Matchers.equalTo(num2));
 		collector.checkThat("Element mismatch", num2, Matchers.equalTo(num1));
+				
+	}
+	
+	@Test
+	public void testEight()
+	{
+		boolean condition = true;	
 		
-		
+		Assert.assertTrue();
 	}
 	
 }
