@@ -1,6 +1,7 @@
 package com.sudas.junit;
 
 import org.hamcrest.Matchers;
+import org.hamcrest.*;
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
@@ -77,7 +78,7 @@ Assert.assertArrayEquals("All elements in array are equal", num1, num2);
 //Assert.assertArrayEquals("All elements in array are equal", num1, num2);
 //		Assert.assertThat(num1, Matchers.equalTo(num2));
 		collector.checkThat("Element mismatch", num2, Matchers.equalTo(num1));
-		collector.addError(error);
+		
 		
 	}
 	
