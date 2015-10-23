@@ -20,22 +20,22 @@ public class DateTimeEPOCHTest {
 	DateTime datetime1;
 
 	@BeforeClass
-	public static void setUpBeforeClass() throws Exception {
+	public static void setUpBeforeClass() throws ExceptionNotWorking {
 	}
 
 	@AfterClass
-	public static void tearDownAfterClass() throws Exception {
+	public static void tearDownAfterClass() throws ExceptionNotWorking {
 	}
 
 	@Before
-	public void setUp() throws Exception {
+	public void setUp() throws ExceptionNotWorking {
 		datetime = new DateTime();
 		datetime1 = new DateTime();
 
 	}
 
 	@After
-	public void tearDown() throws Exception {
+	public void tearDown() throws ExceptionNotWorking {
 	}
 
 	// Date Time to EPOCH conversion

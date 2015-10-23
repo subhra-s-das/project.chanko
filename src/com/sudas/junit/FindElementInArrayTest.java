@@ -11,19 +11,19 @@ import org.junit.Test;
 public class FindElementInArrayTest {
 
 	@BeforeClass
-	public static void setUpBeforeClass() throws Exception {
+	public static void setUpBeforeClass() throws ExceptionNotWorking {
 	}
 
 	@AfterClass
-	public static void tearDownAfterClass() throws Exception {
+	public static void tearDownAfterClass() throws ExceptionNotWorking {
 	}
 
 	@Before
-	public void setUp() throws Exception {
+	public void setUp() throws ExceptionNotWorking {
 	}
 
 	@After
-	public void tearDown() throws Exception {
+	public void tearDown() throws ExceptionNotWorking {
 	}
 
 	@Test
