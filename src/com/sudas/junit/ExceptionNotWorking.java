@@ -2,7 +2,7 @@ package com.sudas.junit;
 
 import java.lang.reflect.Field;
 
-public class Exception {
+public class ExceptionNotWorking {
 
 	public static void main(String[] args) {
 

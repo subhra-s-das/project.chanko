@@ -81,12 +81,6 @@ Assert.assertArrayEquals("All elements in array are equal", num1, num2);
 				
 	}
 	
-	@Test
-	public void testEight()
-	{
-		boolean condition = true;	
-		
-		Assert.assertTrue();
-	}
+	
 	
 }
