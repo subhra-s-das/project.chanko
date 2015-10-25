@@ -21,7 +21,7 @@ class Outer {
 
 	// outer class method
 	public void displaySum() {
-		int outer_total=outer_x + outer_y;
+		int outer_total = outer_x + outer_y;
 	}
 
 	// create a method to access the variables and methods of inner class
@@ -29,7 +29,7 @@ class Outer {
 		Inner inner = new Inner();
 		inner.nameSize();
 	}
-	
+
 	public void accessInner1() {
 		System.out.println();
 	}
@@ -40,13 +40,12 @@ class Outer {
 		public void nameSize() {
 			System.out.println(name.length());
 		}
-		
-		public void accessOuter()
-		{
+
+		public void accessOuter() {
 			System.out.println(outer_x);
-			System.out.println(outer_x+outer_y);
+			System.out.println(outer_x + outer_y);
 		}
-	
+
 	}
 
 }

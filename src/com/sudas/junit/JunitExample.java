@@ -3,6 +3,7 @@ package com.sudas.junit;
 import org.hamcrest.Matchers;
 import org.hamcrest.*;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ErrorCollector;
@@ -19,7 +20,7 @@ public class JunitExample {
 		String actual = "Apple";
 		String expected = "apple";
 		// use of assert
-		Assert.assertEquals(expected.toLowerCase(), actual.toLowerCase());
+		Assert.assertEquals("same string",expected.toLowerCase(), actual.toLowerCase());
 
 	}
 
@@ -61,26 +62,45 @@ public class JunitExample {
 
 	@Test
 	public void testSix() {
-		
-		int num1[]={10,20,30,40,50};
-		int num2[]={10,20,0,40,50};
-Assert.assertArrayEquals("All elements in array are equal", num1, num2);
-		
+
+		int num1[] = { 10, 20, 30, 40, 50 };
+		int num2[] = { 10, 20, 0, 40, 50 };
+		Assert.assertArrayEquals("All elements in array are equal", num1, num2);
+
 	}
+
 	@Rule
 	public ErrorCollector collector = new ErrorCollector();
-	
+
 	@Test
 	public void testSeven() {
-		
-		int num1[]={10,20,30,40,50};
-		int num2[]={10,20,0,40,50};
-//Assert.assertArrayEquals("All elements in array are equal", num1, num2);
-//		Assert.assertThat(num1, Matchers.equalTo(num2));
+
+		int num1[] = { 10, 20, 30, 40, 50 };
+		int num2[] = { 10, 20, 0, 40, 50 };
+		// Assert.assertArrayEquals("All elements in array are equal", num1,
+		// num2);
+		// Assert.assertThat(num1, Matchers.equalTo(num2));
 		collector.checkThat("Element mismatch", num2, Matchers.equalTo(num1));
-				
+
 	}
-	
-	
-	
+
+	@Test
+	public void testEight() {
+		String num1 = "10.1";
+		String num2 = "10.1";
+
+		double number1 = Double.parseDouble(num1);
+		double number2 = Double.parseDouble(num2);
+
+		double total = number1 + number2;
+		Assert.assertTrue(total == 20.2);
+
+	}
+
+	@Ignore("do not test")
+	@Test
+	public void testNine() {
+
+	}
+
 }

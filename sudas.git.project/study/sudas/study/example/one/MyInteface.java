@@ -14,6 +14,10 @@ public class MyInteface {
 		String displayname(String name);
 		String displayaddress(String address);
 		int displayage(int age);
+		 default void testMethod()
+		{
+			
+		}
 
 	}
 }

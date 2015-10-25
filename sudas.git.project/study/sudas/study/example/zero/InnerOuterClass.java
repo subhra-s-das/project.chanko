@@ -9,42 +9,31 @@ public class InnerOuterClass {
 
 }
 
-
-
-class Outer1
-{
+class Outer1 {
 	String name;
 	String address;
-	
+
 	// outer class method
-	public void outer()
-	{
+	public void outer() {
 		System.out.println("this is outer");
 	}
-	
-	public void accessInner()
-	{
+
+	public void accessInner() {
 		Inner inner = new Inner();
 		String test = inner.innerName;
 		System.out.println(test);
-	 inner.inner();
-		
+		inner.inner();
+
 	}
-	
-	
-	class Inner
-	{
+
+	class Inner {
 		String innerName;
-		
+
 		// Inner class method
-		public void inner()
-		{
+		public void inner() {
 			System.out.println("this is inner");
 		}
-		
-		
+
 	}
-	
-	
-	
+
 }

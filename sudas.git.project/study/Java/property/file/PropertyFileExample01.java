@@ -39,7 +39,7 @@ public class PropertyFileExample01 {
 			 * writes the property table to the Output stream Parameters: out an
 			 * output stream. comments a description of the property list.
 			 */
-			prop.store(bos, null);
+			prop.store(bos, "created by sudas");
 
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
