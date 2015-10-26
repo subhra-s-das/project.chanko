@@ -86,6 +86,13 @@ class OuterClass {
 			this.innerID = innerID;
 		}
 
+		// access Outerclass methods and instance variables
+		public void accessOuter() {
+			OuterClass outer = new OuterClass();
+			outer.getOuterID();
+
+		}
+
 	}
 
 	static class StaticInnerClass {
