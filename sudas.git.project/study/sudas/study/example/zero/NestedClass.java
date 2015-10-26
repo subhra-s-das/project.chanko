@@ -41,26 +41,14 @@ class Outer {
 			System.out.println(name.length());
 		}
 
+		
 		public void accessOuter() {
 			System.out.println(outer_x);
 			System.out.println(outer_x + outer_y);
+			Outer out = new Outer();
 		}
 
 	}
 
 }
 
-class Test1 extends Test2 {
-
-	public void object() {
-
-	}
-}
-
-class Test2 {
-
-	public void object2() {
-
-	}
-
-}

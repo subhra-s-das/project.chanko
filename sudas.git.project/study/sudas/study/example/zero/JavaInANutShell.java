@@ -13,15 +13,23 @@ public class JavaInANutShell {
 
 		Laptops sony = new Laptops();
 		Laptops lenovo = new Laptops();
-		
+
 		MobilePC mobilepc1 = new MobilePC();
-		
-		// this is called autoboxing where lower objects are automatically converted
-		MobilePC mobilepc2 = (MobilePC) new Laptops();
+
+		// this is incorrect
+		MobilePC mobile = (MobilePC) new Laptops();
+
+		// this is type casting
+		Laptops laptop = new MobilePC();
+		MobilePC mobile1 = (MobilePC) laptop;
+		System.out.println(mobile);
 
 		// or even this is legal. This is called polymorphism
+		// this is dynamic method dispatch
+		// superclass reference variable referring subclass object
 		Laptops laptops = new MobilePC();
-		
+		laptops.setName("Apple laptop from super class ***MobilePC***");
+		System.out.println(laptops.getName());
 	}
 
 }
