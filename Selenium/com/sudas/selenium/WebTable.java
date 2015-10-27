@@ -27,16 +27,16 @@ class CheckWebTable
 		driver.get("http://www.w3schools.com/html/html_tables.asp");
 		driver.manage().window().maximize();
 		
-		List<WebElement> list = driver.findElements(By.tagName("div"));
+		List<WebElement> list = driver.findElements(By.tagName("a"));
 		System.out.println(list.size());
 		Iterator<WebElement> itr = list.iterator();
 		while(itr.hasNext())
 		{
 				
-			System.out.println(itr.next().toString());
+			System.out.println(itr.next().getAttribute("href"));
 			
-			String attribute = w.getAttribute(itr.next().toString());
-			System.out.println(attribute);
+//			String attribute = w.getAttribute("href");
+//			System.out.println(attribute);
 		}
 		driver.close();
 	}
