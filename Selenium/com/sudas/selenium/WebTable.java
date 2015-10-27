@@ -13,15 +13,15 @@ public class WebTable {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		new CheckWebTable().checkTable();
+		new FindWebElements().find_href();
 	}
 
 }
 
-class CheckWebTable
+class FindWebElements
 {
 	WebElement w;
-	public void checkTable()
+	public void find_href()
 	{
 		WebDriver driver = new FirefoxDriver();
 		driver.get("http://www.w3schools.com/html/html_tables.asp");
@@ -39,6 +39,11 @@ class CheckWebTable
 //			System.out.println(attribute);
 		}
 		driver.close();
+	}
+	
+	public void getWebTable()
+	{
+		
 	}
 	
 }
