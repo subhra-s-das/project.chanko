@@ -1,51 +1,38 @@
 package Sandbox;
 
+import sudas.com.junit.selenium.Login;
+
 public class Inheritance {
 
-	public Inheritance() {
-		// TODO Auto-generated constructor stub
-	}
-
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+A a = new A();
+a.name("sharu");
+		B b = new B();
+		b.name("sudas");
 	}
 
 }
 
-class Parent {
-	String firstName;
+class A {
+	String name;
 	String lastName;
 
-	public String getFirstName() {
-		return firstName;
-	}
+	public void name(String name)
 
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
-
-	public String getLastName() {
-		return lastName;
-	}
-
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
+	{
+		this.name = name;
+		System.out.println(name);
 	}
 
 }
 
-class child extends Parent
-{
+class B extends A {
 	@Override
-	public void setFirstName(String firstName) {
-		// TODO Auto-generated method stub
-		super.setFirstName(firstName);
-	}
+	public void name(String name) {
+	System.out.println(new A().name.length());
+		
 	
-	@Override
-	public void setLastName(String lastName) {
 		// TODO Auto-generated method stub
-		super.setLastName(lastName);
+		super.name(name);
 	}
 }

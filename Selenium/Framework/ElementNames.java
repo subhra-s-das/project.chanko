@@ -1,0 +1,6 @@
+package Framework;
+
+public enum ElementNames {
+	URL,USER_NAME,PASSWORD,LOGIN_BUTTON,AFTER_LOGIN_VALIDATION,S_USER_ID,S_PASSWORD
+
+}

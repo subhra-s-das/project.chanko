@@ -52,9 +52,10 @@ public class ReadingWebTable {
 				in = it1.next().getText();
 //				 bos.write(it1.next().getText().getBytes());
 //				 bos.write('\n');
+				System.out.println(in);
 				
 			}
-			System.out.println(in);
+
 			bos.flush();
 			bos.close();
 			driver.close();
