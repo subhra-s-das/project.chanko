@@ -16,6 +16,7 @@ public class WebElementProperties {
 	private static String S_USR_NAME;
 	private static String S_PASSWD;
 	private static String NAVIGATE_BROWSE;
+	private static String REPORT_TABLE;
 
 	public Properties properties() {
 		File file = new File("/Users/S_Das/csspath.properties");
@@ -68,6 +69,11 @@ public class WebElementProperties {
 	public static String getNAVIGATE_BROWSE() {
 		NAVIGATE_BROWSE = new WebElementProperties().properties().getProperty("browseTAB");
 		return NAVIGATE_BROWSE;
+	}
+
+	public static String getREPORT_TABLE() {
+		REPORT_TABLE = new WebElementProperties().properties().getProperty("JSTable");
+		return REPORT_TABLE;
 	}
 
 }

@@ -10,23 +10,13 @@ public class LoginPage extends WebElementProperties {
 	public static void main(String[] args) {
 
 		LoginPage login = new LoginPage();
-		login.login();
 
 	}
-
-	public String login() {
-
-		WebDriver driver = new FirefoxDriver();
-		driver.get(getURL());
-		driver.findElement(By.cssSelector(getUSER_NAME())).clear();
-		driver.findElement(By.cssSelector(getUSER_NAME())).sendKeys(getS_USR_NAME());
-		driver.findElement(By.cssSelector(getPASSWORD())).clear();
-		driver.findElement(By.cssSelector(getPASSWORD())).sendKeys(getS_PASSWD());
-		driver.findElement(By.cssSelector(getLOGIN_BUTTON_PATH())).click();
-		String element = driver.findElement(By.cssSelector(getIMAPGE_VALIDATION_PATH())).getAttribute("src");
-		return element;
-	}
-
+/**
+ * Every method is taking WebDriver object as argument and returning WebElement interface.
+ * @param driver
+ * @return
+ */
 	public static WebElement userName(WebDriver driver) {
 		WebElement UserElement = driver.findElement(By.cssSelector(getUSER_NAME()));
 		return UserElement;
@@ -42,7 +32,11 @@ public class LoginPage extends WebElementProperties {
 		WebElement loginButtonElement = driver.findElement(By.cssSelector(getLOGIN_BUTTON_PATH()));
 		return loginButtonElement;
 	}
-
+/***
+ * to perform validation after login
+ * @param driver
+ * @return
+ */
 	public static WebElement VerificationImage(WebDriver driver) {
 		WebElement imageElement = driver.findElement(By.cssSelector(getIMAPGE_VALIDATION_PATH()));
 		return imageElement;
