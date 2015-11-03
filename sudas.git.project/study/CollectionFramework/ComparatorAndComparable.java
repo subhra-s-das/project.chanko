@@ -19,10 +19,6 @@ class FruitsName implements Comparable<FruitsName> {
 
 	String name;
 
-	public void fruitName(String name) {
-
-	}
-
 	public String getName() {
 		return name;
 	}

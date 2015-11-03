@@ -29,7 +29,7 @@ class ChangeDate {
 
 	public void dateTimeToEpoch() {
 		String dateTime = "21/09/2015 08:10:00";
-		SimpleDateFormat format = new SimpleDateFormat("dd/mm/yyyy hh:mm:ss");
+		SimpleDateFormat format = new SimpleDateFormat("dd/mm/yyyy HH:mm:ss");
 		try {
 			Date epoch = format.parse(dateTime);
 			System.out.println(epoch.getTime());
