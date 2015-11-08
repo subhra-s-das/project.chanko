@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class Reports extends WebElementProperties {
+public class Reports extends ObjectRepo {
 
 	public static WebElement browse(WebDriver driver) {
 		WebElement browseElement = driver.findElement(By.cssSelector(getNAVIGATE_BROWSE()));

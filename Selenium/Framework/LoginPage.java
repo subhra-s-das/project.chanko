@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class LoginPage extends WebElementProperties {
+public class LoginPage extends ObjectRepo {
 
 	public static void main(String[] args) {
 

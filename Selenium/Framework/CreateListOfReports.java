@@ -12,7 +12,7 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
 import sudas.study.example.zero.Sleep;
 
-public class CreateListOfReports extends WebElementProperties {
+public class CreateListOfReports extends ObjectRepo {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
@@ -40,17 +40,11 @@ public class CreateListOfReports extends WebElementProperties {
 		Reports.browse(driver).click();
 
 		List<String> JSlist = Reports.getReportsJS(driver);
-//		Iterator<String> jsit = JSlist.iterator();
-//		while (jsit.hasNext()) {
-//			System.out.println(jsit.next().toString());
-//		writer.write("hello there".toString());
-//		}
-		for (int i=6;i<JSlist.size();i++)
-		{
-			writer.write("report "+i+"="+JSlist.get(i).toString());
+		for (int i = 6; i < JSlist.size(); i++) {
+			writer.write("report" + i + "=" + JSlist.get(i).toString());
 			writer.write('\n');
 		}
-		
+
 		writer.flush();
 		writer.close();
 	}

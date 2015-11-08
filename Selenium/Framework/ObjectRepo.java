@@ -6,7 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
-public class WebElementProperties {
+public class ObjectRepo {
 
 	private static String URL;
 	private static String USER_NAME;
@@ -32,47 +32,47 @@ public class WebElementProperties {
 	}
 
 	public static String getURL() {
-		URL = new WebElementProperties().properties().getProperty("url");
+		URL = new ObjectRepo().properties().getProperty("url");
 		return URL;
 	}
 
 	public static String getUSER_NAME() {
-		USER_NAME = new WebElementProperties().properties().getProperty("username");
+		USER_NAME = new ObjectRepo().properties().getProperty("username");
 		return USER_NAME;
 	}
 
 	public static String getPASSWORD() {
-		PASSWORD = new WebElementProperties().properties().getProperty("password");
+		PASSWORD = new ObjectRepo().properties().getProperty("password");
 		return PASSWORD;
 	}
 
 	public static String getLOGIN_BUTTON_PATH() {
-		LOGIN_BUTTON_PATH = new WebElementProperties().properties().getProperty("loginButton");
+		LOGIN_BUTTON_PATH = new ObjectRepo().properties().getProperty("loginButton");
 		return LOGIN_BUTTON_PATH;
 	}
 
 	public static String getIMAPGE_VALIDATION_PATH() {
-		IMAGE_VALIDATION_PATH = new WebElementProperties().properties().getProperty("validationImage");
+		IMAGE_VALIDATION_PATH = new ObjectRepo().properties().getProperty("validationImage");
 		return IMAGE_VALIDATION_PATH;
 	}
 
 	public static String getS_USR_NAME() {
-		S_USR_NAME = new WebElementProperties().properties().getProperty("sendUserName");
+		S_USR_NAME = new ObjectRepo().properties().getProperty("sendUserName");
 		return S_USR_NAME;
 	}
 
 	public static String getS_PASSWD() {
-		S_PASSWD = new WebElementProperties().properties().getProperty("sendPassword");
+		S_PASSWD = new ObjectRepo().properties().getProperty("sendPassword");
 		return S_PASSWD;
 	}
 
 	public static String getNAVIGATE_BROWSE() {
-		NAVIGATE_BROWSE = new WebElementProperties().properties().getProperty("browseTAB");
+		NAVIGATE_BROWSE = new ObjectRepo().properties().getProperty("browseTAB");
 		return NAVIGATE_BROWSE;
 	}
 
 	public static String getREPORT_TABLE() {
-		REPORT_TABLE = new WebElementProperties().properties().getProperty("JSTable");
+		REPORT_TABLE = new ObjectRepo().properties().getProperty("JSTable");
 		return REPORT_TABLE;
 	}
 
