@@ -22,6 +22,7 @@ public class ComparatorExample {
 		arrayList.add(s4);
 		arrayList.add(s5);
 		arrayList.add(s6);
+	
 
 		/*
 		 * as long as all the names have same case the starting alphabet the

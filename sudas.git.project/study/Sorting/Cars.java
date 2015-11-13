@@ -1,4 +1,4 @@
-package CollectionFramework;
+package Sorting;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -11,7 +11,7 @@ public class Cars {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		new sortList().sort();
+		new SimpleSorting().simplesort();
 
 	}
 
@@ -98,4 +98,26 @@ List<String> list2 = Arrays.asList("java", "C++", "python", "cobox", "Object C",
 
 		
 	}
+}
+
+
+
+class SimpleSorting
+{
+	public void simplesort()
+	{
+		List<String> list = Arrays.asList("java", "C++", "python", "cobox", "Object C", "androiD");
+		Object[] array = list.toArray();
+		
+		Arrays.sort(array);
+		for (int i=0;i<array.length;i++)
+		{
+			System.out.println(array[i].toString());
+		}
+	
+		System.out.println(list);
+	}
+	
+	
+	
 }
