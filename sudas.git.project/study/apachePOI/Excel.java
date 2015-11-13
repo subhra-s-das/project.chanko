@@ -1,10 +1,13 @@
-package apachePOI;
-
-public class Excel {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
-}
+//
+//
+//
+//		<dependency>
+//	<groupId>org.apache.poi</groupId>
+//	<artifactId>poi</artifactId>
+//	<version>3.12</version>
+//</dependency>		
+//<dependency>
+//    <groupId>org.apache.poi</groupId>
+//    <artifactId>poi-ooxml</artifactId>
+//    <version>3.11</version>
+//</dependency>
